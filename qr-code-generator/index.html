@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="md-sabbir-hossain-alif">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="icon" href="https://img.icons8.com/?size=192&id=OWGD3RjcPYvl&format=png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="qr-code">
+        <h1>QR Code Generator</h1>
+
+        <form onsubmit="handleGenerateQrCode(event)">
+            <input id="url" type="url" placeholder="Type your url...">
+            <button id="btn" type="submit">Generate</button>
+        </form>
+
+        <div id="qr-box"></div>
+    </div>
+
+    <!-- Load QRCode library FIRST -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
