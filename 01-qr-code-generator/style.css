@@ -71,3 +71,19 @@ body {
     justify-content: center;
     border-radius: 16px;
 }
+
+#author {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #252525;
+    font-size: 20px;
+}
+
+#w-site {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #252525;
+    font-size: 20px;
+}
