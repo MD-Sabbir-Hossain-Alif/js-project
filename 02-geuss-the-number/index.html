@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="sabbir official">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geuss The Number Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+        * {
+            font-family: "Hammersmith One", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-800 w-full h-screen flex justify-center items-center text-center">
+    <section class="bg-slate-300 w-[550px] p-10 rounded-xl space-y-5 mx-auto shadow-xl">
+        <h3 class="text-slate-800 font-semibold text-5xl mb-2 ">Geuss the Number!</h3>
+        <p class="text-xl m-5">I'm thinking of a number between <Span class="text-[#fc00b9] font-semibold text-2xl">1</Span>
+            and <span class="text-[#fc00b9] font-semibold text-2xl">100</span>.</p>
+            <!-- input and button -->
+        <div class="flex justify-center w-full">
+            <input type="number" class="input validator border-gray-100 rounded-r-none" placeholder="Type a number between 1 to 100" min="1" max="100"
+                title="Must be between be 1 to 100" required />
+            <button class="btn btn-primary tracking-wide rounded-l-none">Geuss</button>
+        </div>
+        <!--  feedback, attempts and reset-->
+        <div class="space-y-5 text-center">
+            <p id="feedback" class="text-[#fc00b9] text-xl"></p>
+            <p class="text-xl">Attempts: <span id="attempt" class="text-red-600">0</span></p>
+            <button id="reset" class="btn btn-neutral tracking-wide">Reset Game</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
