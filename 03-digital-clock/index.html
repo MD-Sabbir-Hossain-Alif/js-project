@@ -54,14 +54,9 @@
 </head>
 
 <body class="flex h-screen justify-center items-center overflow-x-hidden bg-[url(./bg-img.jpg)] bg-no-repeat bg-cover">
-    <section id="clock-container" class="text-slate-50 text-shadow-[5px 3px 3px rgba(0,0,0,0.7)] relative">
-        <div id="content" class="p-16 px-20 text-center w-800px font-semibold">
-            <div class="flex gap-2 text-6xl mb-4">
-                <h2 id="day" class="text-amber-300">Friday</h2>
-                <h2 id="date">12</h2>
-                <h2 id="month">Jun</h2>
-            </div>
-            <div id="time" class="text-4xl">
+    <section id="clock-container" class="w-[800px] text-slate-50 text-shadow-[5px 3px 3px rgba(0,0,0,0.7)] relative">
+        <div id="content" class="p-16 px-20 text-center  font-semibold">
+            <div id="time" class="text-6xl mb-7">
                 <span id="hours">00</span>
                 <span>:</span>
                 <span id="minutes">00</span>
@@ -69,6 +64,12 @@
                 <span id="seconds">00</span>
                 <span id="session" class="text-emerald-400">AM</span>
             </div>
+            <div class="flex justify-center items-center gap-2 text-5xl ">
+                <h2 id="day" class="text-amber-300">Friday</h2>
+                <h2 id="date">12</h2>
+                <h2 id="month">Jun</h2>
+            </div>
+            
         </div>
     </section>
     <script src="app.js"></script>
